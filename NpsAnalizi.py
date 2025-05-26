@@ -33,7 +33,6 @@ if uploaded_file:
 
     st.subheader("Sınıflandırılmış Veri")
     st.dataframe(df)
-    Siniflandirma = df
 
     genel_nps = df['NPS_Puan'].mean()
     st.metric(label="Genel NPS Skoru", value=round(genel_nps, 2))
